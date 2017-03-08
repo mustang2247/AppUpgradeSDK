@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="@drawable/kktoast"
+    android:id="@+id/kktoast" >
+
+    <TextView 
+        android:id="@+id/message"
+        android:layout_height="wrap_content"        
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="24sp"
+        android:textColor="@color/kktoast_text_color"        
+        android:maxLines="1"
+        android:ellipsize="none"
+     />   
+</LinearLayout>

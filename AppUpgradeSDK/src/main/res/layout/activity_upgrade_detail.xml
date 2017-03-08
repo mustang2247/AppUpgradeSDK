@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_sdk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2c2d48"
+    tools:context="com.konka.appupgrade.upgradedetail.UpgradeDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="600dp"
+        android:layout_height="66dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="82dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivIcon_sdk"
+            android:layout_width="66dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="25dp"
+            android:layout_toRightOf="@id/ivIcon_sdk"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_apk_name_sdk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/app_name_color"
+                android:textSize="@dimen/app_name_text_size" />
+
+            <TextView
+                android:id="@+id/tv_apk_size_sdk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="V5.6.0 / 20.10M"
+                android:textColor="@color/app_size_color"
+                android:textSize="@dimen/app_size_text_size" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/update_bg_sdk"
+            android:gravity="center"
+            android:text="@string/can_update"
+            android:textColor="@color/can_update_color"
+            android:textSize="@dimen/can_update_text_size" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_change_sdk"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/update_detail"
+        android:textColor="@color/update_detail_color"
+        android:textSize="@dimen/change_history_size" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_detail"
+        android:layout_width="600dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/tv_change_sdk"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp">
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="3.5dp"
+            android:background="@drawable/scrollbar_bg_sdk" />
+
+        <WebView
+            android:id="@+id/wv_sdk"
+            android:layout_width="600dp"
+            android:layout_height="300dp"
+            android:focusable="false"
+            android:scrollbarSize="8dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbarThumbVertical="@drawable/scrollbar_thumb" />
+
+        <!--以下两个ImageView为遮罩-->
+
+        <!--<ImageView
+            android:layout_marginEnd="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:background="@drawable/shade_top"/>
+
+        <ImageView
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/shade_bottom"/>-->
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_wrapper_sdk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_detail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_update_sdk"
+            android:layout_width="184dp"
+            android:layout_height="52dp"
+            android:background="@drawable/btn_selector"
+            android:text="@string/update_immediately"
+            android:textColor="#f0f0f0"
+            android:textSize="@dimen/button_text_size" />
+
+        <Button
+            android:id="@+id/btn_skip_sdk"
+            android:layout_width="184dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="40dp"
+            android:background="@drawable/btn_selector"
+            android:text="@string/update_later"
+            android:textColor="#f0f0f0"
+            android:textSize="@dimen/button_text_size" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/progress_wrapper_sdk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_detail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBar_sdk"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="498dp"
+            android:layout_height="12dp"
+            android:progressDrawable="@drawable/barbgimg" />
+
+        <TextView
+            android:id="@+id/tv_percent_sdk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="@string/connecting"
+            android:textColor="@color/speed_text__color"
+            android:textSize="@dimen/speed_text_size" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="webView_stroke_color">#804261</color>
+
+    <color name="app_name_color">#f0f0f0</color>
+    <color name="app_size_color">#c8c8c8</color>
+    <color name="can_update_color">#f0f0f0</color>
+
+    <color name="update_detail_color">#529eea</color>
+
+    <color name="speed_text__color">#f0f0f0</color>
+    <color name="kktoast_text_color">#ededed</color>
+
+    <color name="dialog_title_color">#d8ffffff</color>
+    <color name="dialog_message_color">#66ffffff</color>
+    <color name="scrollbar_color">#58566d</color>
+
+    <color name="btn_focus_color">#0c78e3</color>
+    <color name="btn_focus_stroke_color">#ffffff</color>
+    <color name="btn_normal_stroke_color">#58566d</color>
+
+    <color name="progressbar_progress_color">#22ac38</color>
+    <color name="progressbar_bg_color">#58566d</color>
+
+
+
+</resources>

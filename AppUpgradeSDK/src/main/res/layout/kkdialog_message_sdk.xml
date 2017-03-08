@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#bb000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="688dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/icon"
+                android:src="@drawable/tip_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="8dp" />
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#deddde"
+                android:textSize="36sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="22dp"
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/msg_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="14dp"
+                android:text="你确定要恢复出厂设置吗？"
+                android:textColor="#66ffffff"
+                android:textSize="24sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button_positive"
+                android:layout_width="128dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="400dp"
+                android:layout_marginTop="46dp"
+                android:background="@drawable/kkdialog_btn_nor_bg"
+                android:text="确定"
+                android:textColor="#787878"
+                android:textSize="20sp"
+                android:visibility="visible" />
+
+
+            <Button
+                android:id="@+id/button_negative"
+                android:layout_width="128dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="544dp"
+                android:layout_marginTop="46dp"
+                android:background="@drawable/kkdialog_btn_nor_bg"
+                android:text="取消"
+                android:textColor="#787878"
+                android:textSize="20sp"
+                android:visibility="visible" />
+
+
+            <View
+                android:padding="10dp"
+                android:id="@+id/select_box"
+                android:layout_width="134dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="390dp"
+                android:layout_marginTop="43dp"
+                android:background="@drawable/kkdialog_focus" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="selectbox_x_offset">3dp</dimen>
+
+    <dimen name="app_name_text_size">30sp</dimen>
+    <dimen name="can_update_text_size">16sp</dimen>
+    <dimen name="app_size_text_size">18sp</dimen>
+    <dimen name="change_history_size">24sp</dimen>
+
+    <dimen name="button_text_size">24sp</dimen>
+    <dimen name="speed_text_size">24sp</dimen>
+
+</resources>
